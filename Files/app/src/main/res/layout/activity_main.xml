@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:screenOrientation="landscape"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.graphsketcher.app.MainActivity"
+    android:orientation="horizontal"
+    android:background="#000000">
+
+
+    <!-- The view that creates the axis will be placed here -->
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- +++++++++++++++ Sketch Area ++++++++++++++++++++++ -->
+
+    <com.example.graphsketcher.app.SketchAreaView
+        android:id="@+id/drawingView"
+        android:layout_width="950dp"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:background="#FFFFFFFF" />
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- ++++++++ Layout for the Buttons ++++++++++++++++++ -->
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/refresh_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Refresh"
+            android:text="Refresh"
+            android:onClick="onClick"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Number of Grid Positions"
+            android:id="@+id/gridPos_btn"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/done_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Done"
+            android:text="Animate"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

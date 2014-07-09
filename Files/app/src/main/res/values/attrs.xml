@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--  Contains the custom attributes for the GraphView view  -->
+
+<resources>
+
+    <declare-styleable name="GraphView">
+        
+        <!-- Put the colours and stuff in here tomorrow, and then get the rest of the thing finished up, had enough for today -->
+        <attr name="paintColour" format="color" />
+        <attr name="brushSize" format="float" />
+        <attr name="erasing" format="boolean" />
+
+    </declare-styleable>
+
+
+</resources>
